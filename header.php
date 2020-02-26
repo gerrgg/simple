@@ -30,10 +30,7 @@
 				<div class="float-left">
 					<i id="open-menu" class="fas fa-bars text-white" style="font-size: 24px"></i>
 					<a class="navbar-brand text-white pl-2" href="/">
-						Fall Protection
-						<div class="d-inline" style="font-size: 24px">
-							<span style="color: red">U</span><span style="color: white">S</span><span style="color: royalblue">A</span>
-						</div>
+						<?php simple_header_logo(); ?>
 					</a>
 				</div>
 				<div class="float-right">

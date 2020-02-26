@@ -146,3 +146,20 @@ if ( ! function_exists( 'simple_post_thumbnail' ) ) :
 		endif; // End is_singular().
 	}
 endif;
+
+if ( ! function_exists( 'simple_header_logo' ) ) :
+	/**
+	 * Displays the logo in the header
+	 * 
+	 * Gets the ID of the logo, returns image
+	 */
+	function simple_header_logo(){
+		$custom_logo_id = get_theme_mod( 'custom_logo' );
+		$image = wp_get_attachment_image_src( $custom_logo_id , 'medium' );
+
+		// var_dump( $image );
+
+		printf( "<img class='img-fluid custom-logo' src='%s' />", $image[0] );
+	}
+
+endif;
